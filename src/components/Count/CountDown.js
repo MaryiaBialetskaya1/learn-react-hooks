@@ -10,7 +10,6 @@ export function CountDown() {
       setNumber(0);
     }
   };
-  console.log(number);
   return (
     <div>
       <h1>Number: {number}</h1>
