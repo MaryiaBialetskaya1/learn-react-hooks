@@ -1,9 +1,11 @@
 import "./App.css";
+import { CountDown } from "./components/Count/CountDown";
 import UseHooks01 from "./components/UseHooks01/UseHooks01";
 function App() {
   return (
     <div>
       <UseHooks01 />
+      <CountDown />
     </div>
   );
 }
