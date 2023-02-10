@@ -1,4 +1,5 @@
 import "./App.css";
+import { ChangeText } from "./components/ChangeText/ChangeText";
 import { CountDown } from "./components/Count/CountDown";
 import UseHooks01 from "./components/UseHooks01/UseHooks01";
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <UseHooks01 />
       <CountDown />
+      <ChangeText />
     </div>
   );
 }

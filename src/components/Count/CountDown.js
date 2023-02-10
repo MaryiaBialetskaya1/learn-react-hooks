@@ -1,15 +1,19 @@
 import { useState } from "react";
 
 export function CountDown() {
-  const [namber, setNumber] = useState(100);
+  const [number, setNumber] = useState(100);
 
   const updateData = () => {
-    setNumber(namber - 5);
+    if (number >= 5) {
+      setNumber(number - 5);
+    } else {
+      setNumber(0);
+    }
   };
-
+  console.log(number);
   return (
     <div>
-      <h1>Number: {namber}</h1>
+      <h1>Number: {number}</h1>
       <button onClick={updateData}>Click</button>
     </div>
   );
