@@ -3,10 +3,12 @@ import { ChangeText } from "./components/ChangeText/ChangeText";
 import { CountDown } from "./components/Count/CountDown";
 import { List } from "./components/ListWithData/List";
 import { MoviesList } from "./components/MoviesListData/MoviesList";
+import { TopHotels } from "./components/TopHotels/TopHotels";
 import UseHooks01 from "./components/UseHooks01/UseHooks01";
 function App() {
   return (
     <div>
+      <TopHotels />
       <UseHooks01 />
       <CountDown />
       <ChangeText />
