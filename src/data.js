@@ -53,6 +53,7 @@ export const hotels = [
     image:
       "https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/39038995.jpg?k=f7554d11e8bba0b84366408dcac342cae0251daee63689b1c06614d1d81cfc86&o=&hp=1",
     source: "Booking.com",
+    showMore: false,
   },
 
   {
@@ -63,6 +64,7 @@ export const hotels = [
     image:
       "https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/51410533.jpg?k=54c069a15e872c81b5dbd3f07066cf318247fb58c1c2d42e35f8dbe6f07479ff&o=&hp=1",
     source: "Booking.com",
+    showMore: false,
   },
 
   {
@@ -73,5 +75,6 @@ export const hotels = [
     image:
       "https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/261355520.jpg?k=92f96913d29ac4bb951d07641456f2668b2dc7bbd5a4ae007baa97f5f379757a&o=&hp=1",
     source: "Booking.com",
+    showMore: false,
   },
 ];

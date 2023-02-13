@@ -4,6 +4,13 @@ import s from "./TopHotels.module.css";
 
 export function TopHotels() {
   const [hotel, setHotel] = useState(hotels);
+  const [showText, setShowMore] = useState(false);
+
+  const showTextClick = (item) => {
+    item.showMore = !item.showMore;
+    setShowMore(!showText);
+  };
+
   const removeHotel = (id) => {
     let newHotel = hotel.filter((el) => el.id !== id);
     setHotel(newHotel);
@@ -14,8 +21,8 @@ export function TopHotels() {
       <div className={s.container}>
         <h1>My top {hotel.length} hotels</h1>
       </div>
-      {hotel.map((element) => {
-        const { id, hotelName, description, image, source } = element;
+      {hotel.map((item) => {
+        const { id, hotelName, description, image, source, showMore } = item;
 
         return (
           <div key={id}>
@@ -25,7 +32,12 @@ export function TopHotels() {
               </h2>
             </div>
             <div className={s.container}>
-              <p>{description}</p>
+              <p>
+                {showMore ? description : description.substring(0, 220) + "..."}
+                <button onClick={() => showTextClick(item)}>
+                  {showMore ? "Show less" : "Show more"}
+                </button>
+              </p>
             </div>
             <div className={s.container}>
               <img src={image} alt="hotels" width="300px" />
