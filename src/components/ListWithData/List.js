@@ -9,10 +9,21 @@ export function List() {
         const { id, todo } = name;
         return (
           <div key={id}>
-            <p>{todo}</p>
+            <p>
+              {id} {todo}
+            </p>
           </div>
         );
       })}
+      <div>
+        <button
+          onClick={() => {
+            setData([]);
+          }}
+        >
+          Delete all
+        </button>
+      </div>
     </div>
   );
 }
